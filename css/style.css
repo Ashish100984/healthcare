@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700');
+
+body {margin: 0; padding: 0; background: #fff; color: #272727; font-family: 'Roboto', sans-serif; letter-spacing: 0.5px; }
+* {box-sizing: border-box; }
+body a{transition:0.5s all;-webkit-transition:0.5s all;-moz-transition:0.5s all;-o-transition:0.5s all;-ms-transition:0.5s all;text-decoration:none;outline:none;}
+h1, h2, h3, h4, h5, h6 {margin-top: 0; margin-bottom: 20px; }
+ul {list-style:none;margin:0;padding:0;}
+body a:hover{text-decoration:none;}
+body a:focus{outline:none;text-decoration:none;}
+img{max-width:100%;width:auto;}
+
+/*Scrollbar CSS*/
+::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);background-color:#F5F5F5;}
+::-webkit-scrollbar{width:7px;background-color:#F5F5F5;height:6px;}
+::-webkit-scrollbar-thumb{background-color:#11b8c3; border-radius: 10px; }
+
+/*Button CSS*/
+.hBtn {margin-top: 30px; }
+.hBtn > a {padding: 10px 30px; text-transform: uppercase; color: #042430; letter-spacing: 1px; background: #09cfdb; }
+.hBtn > a:hover, .hBtn > a:focus {background: #042430; color: #09cfdb; }
+.hBtn.view > a {background: #042430; color: #09cfdb; }
+.hBtn.view > a:hover, .hBtn.view > a:focus {background: #fff; color: #042430; }
+
+
+/*Header CSS*/
+header {background:#042430; padding: 10px 0;}
+header .navbar-brand {padding: 0 0;}
+ul.nav li a {color: #09cfdb; text-transform: uppercase; font-size: 16px; display: block; }
+.nav>li.active>a, .nav>li>a:focus, .nav>li>a:hover {background-color: #09cfdb; color: #042430; }
+/*ul.nav li:last-child a {background: #09cfdb; color: #042430; border-radius: 5px;}*/
+.navbar-toggle {background: #09cfdb; border-radius: 0; border:none; color: #042430;}
+
+.banner {padding: 100px 0; min-height: 60vh; background-image: url(../images/banner-bg.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat; position: relative; color: #fff; }
+.banner:before {content: ""; background: rgba(4,36,48,0.1); position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.banner-content h1 {text-shadow: 0 1px 5px #042430; line-height: inherit;}
+.banner-content h4 {line-height: 32px; font-weight: normal; letter-spacing: 1px; text-shadow: 0 1px 0px #042430;}
+
+.service, .offer, .doctor { padding: 60px 0 30px; }
+.service, .doctor {background: #e6effa; }
+.serviceDiv {
+	margin: 0 -15px; 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    }
+
+.service-content {text-align: center; background: #fff; padding: 30px 15px; margin: 0 15px 30px;  box-shadow: 0 1px 10px 0 #ccc; width: 23%; }
+.hIcon {background: #09cfdb; width: 100px; height: 100px; line-height: 100px; border-radius: 100%; margin: 0 auto 20px; box-shadow: 0 1px 10px 0 #09cfdb;}
+.hIcon img {max-width: 50px;}
+.service-content h3 {color: #09cfdb; }
+
+.offer {color: #fff;  background-image: url(../images/offer-bg.jpg); background-position: top center; background-size: cover; background-repeat: no-repeat;}
+.offerDiv {margin-bottom: 30px; }
+.offer-content h4 {text-align: justify; line-height: 32px; font-weight: normal; letter-spacing: 1px; }
+.offer-content h2 {text-transform: uppercase; letter-spacing: 1px; font-size: xx-large; }
+.doctor h2 {text-align: center; color: #042430; }
+.doctor-content {display: table; width: 100%; margin-bottom: 30px; box-shadow: 0 1px 10px 0 #ccc; background: #fff; }
+.doctor-content > div {display: table-cell; vertical-align: top; }
+.doctorImg { width: 200px; }
+.doctorImg img {max-width: 200px;}
+.doctorText {padding: 20px; }
+.doctorText h3 { color: #09cfdb; }
+
+footer {background:#042430; padding: 50px 0; color: #c3c3c3; letter-spacing: 0.5px; font-size: 13px; }
+footer h4 {color: #fff; text-transform: uppercase; letter-spacing: 1px; }
+.footContact ul {margin-top: 20px; }
+.footContact ul li {display: table; width: 100%; margin-bottom: 15px; }
+ul li a {color: #c3c3c3; }
+ul li a:hover, ul li a:focus {color: #fff;}
+.footContact ul li > div {display: table-cell; vertical-align: top; }
+.footContact ul li > div:first-of-type {width: 30px; }
+.footContact ul li > div i {color: #09cfdb; font-size: 20px; }
+.footLink ul li {line-height: 30px; }
+#name, #email {outline: none; border: 1px solid #09cfdb; background: transparent; width: 100%; padding: 12px 18px; color: #fff; }
+.submit {border-radius: 0; outline: none; padding: 10px 30px; text-transform: uppercase; color: #042430; letter-spacing: 1px; background: #09cfdb; width: 100%; border: 1px solid #09cfdb; transition:0.5s all;-webkit-transition:0.5s all;-moz-transition:0.5s all;-o-transition:0.5s all;-ms-transition:0.5s all;}
+.submit:hover, .submit:focus {background: transparent; color: #09cfdb; }
+
+@media (max-width: 767px) {
+	header .navbar-brand {padding: 0 10px;}
+	.navbar-nav {margin: 0 -15px; }
+	.banner {text-align: center; padding: 50px 0 ;}
+	.banner:before { background: rgba(4,36,48,0.4);}
+	.serviceDiv {display: block;}
+	.service-content {width: auto;}
+	.offer-content {text-align: center; margin-bottom: 30px;}
+	.offer-content h2 {font-size: x-large; }
+	.offer-content h4 {line-height: 28px; }
+	.doctor-content > div {display: block; }
+
+	.doctorImg {width: 100%; text-align: center; }
+	.doctorText {text-align: center; }
+	footer {padding: 30px 0; }
+	.footContact, .footLink {margin-bottom: 30px;}
+	.footLink ul {column-count: 2; column-gap: 15px; }
+}
